@@ -1,2 +1,2 @@
-# Digitalitzaci-
+# Digitalitzacio
 Digitalització 2526
