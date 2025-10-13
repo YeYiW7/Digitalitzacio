@@ -1,6 +1,6 @@
 ## Ex 11
 contador= 0
-paraula="programació"
+paraula="atggatcattta"
 lletra ='a'
 
 for x in paraula:
