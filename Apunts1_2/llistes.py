@@ -1,7 +1,11 @@
 l=[1,2,3,5,7]
 print(l)
+
+#Afegir
 l.append(11)
 print(l)
+
+# Eliminar
 l.pop(4)
 print(l)
 
