@@ -1,20 +1,27 @@
-print('Lliste de 5 números')
-num=[1,2,3,4,5]
-print(num)
 
-print('Llista de noms')
-noms=['Juan', 'Carlos' , 'Luis','Fernando', 'Javi']
-print(noms)
+print("=====Crear i mostrar una llista=====")
+# Crea una llista amb 5 números enters i mostra-la per pantalla
+llista_numeros = [10, 20, 30, 40, 50]
+print("Llista de números:", llista_numeros)
 
 
-print('Llista de noms (afegir i eliminar)')
-noms=['Juan', 'Carlos' , 'Luis','Fernando', 'Javi']
-noms.append('Jose')
-noms.pop(0)
-print(noms)
+print("=====Accedir a elements=====")
+# Accedir a elements
+noms = ["Anna", "Pere", "Maria", "Joan", "Laura"]
+print("Primer element:", noms[0])
+print("Últim element:", noms[-1])
 
-print("Longitud d'una llista")
-cont= 0
-while cont < len(noms):
-    print(noms[cont])
-    cont+=1
+
+print("=====Afegir i eliminar elements=====")
+# Afegir i eliminar elements
+print("Llista original:", noms)
+noms.append("Carles")  # Afegeix al final
+print("Després d'afegir 'Carles':", noms)
+element_eliminat = noms.pop(0)  # Elimina el primer
+print(f"Després d'eliminar '{element_eliminat}':", noms)
+
+
+print("=====Longitud d'una llista=====")
+# Longitud d'una llista
+print(f"Longitud de la llista de números: {len(llista_numeros)}")
+print(f"Longitud de la llista de noms: {len(noms)}")
