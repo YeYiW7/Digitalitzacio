@@ -8,7 +8,6 @@ noms = ["Anna", "Pere", "Maria", "Joan", "Laura"]
 print("Primer element:", noms[0])
 print("Últim element:", noms[-1])
 
-
 # Afegir i eliminar elements
 print("Llista original:", noms)
 noms.append("Carles")  # Afegeix al final
