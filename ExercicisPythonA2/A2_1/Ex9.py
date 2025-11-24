@@ -1,4 +1,6 @@
-"""
+# AUN NO HE ACABADO
+
+""" 
 9- Ordenació (deixar pel final)
 Ordenar una llista per exemple  list_num=[4,7,2,9,5,6]
 # Ordena una llista de números de menor a major.
@@ -10,21 +12,18 @@ Implementa amb l’algoritme d’ordenació “Insertion Sort”
 """
 
 list_num = [2, 7, 4, 2, 1, 6, 3, 7, 6, 10]
-print("Llista original:", list_num)
-llista_ordenada = sorted(list_num)
-print("Llista ordenada (amb sorted):", llista_ordenada)
 
 def selection_sort(llista):
     llista = llista.copy() 
     n = len(llista)
     
     for i in range(n):
-        min_idx = i
-        for j in range(i+1, n):
-            if llista[j] < llista[min_idx]:
-                min_idx = j
+        min = i
+        for j in range(i + 1, n):
+            if llista[j] < llista[min]:
+                min = j
         
-        llista[i], llista[min_idx] = llista[min_idx], llista[i]
+        llista[i], llista[min] = llista[min], llista[i]
     
     return llista
 
@@ -45,6 +44,7 @@ def insertion_sort(llista):
 
 
 print("Llista original:", list_num)
+llista_ordenada = sorted(list_num)
+print("Llista ordenada (amb sorted):", llista_ordenada)
 print("Selection Sort:", selection_sort(list_num))
 print("Insertion Sort:", insertion_sort(list_num))
-print("Llista original sense canvis:", list_num) 
